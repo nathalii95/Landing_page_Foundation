@@ -342,10 +342,22 @@ z-index: 1000;
 } 
 
 
-#izquierda{
+/* #izquierda{
   display: grid;
   justify-self: left;
   margin-left: 30px;
+}
+ */
+
+ 
+#izquierda {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+}
+
+.imglogo {
+  margin-right: 10px;
 }
 
 #derecha{
