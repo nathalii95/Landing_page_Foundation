@@ -12,6 +12,9 @@ body{
   font-family: 'Roboto', sans-serif;
 }
 
+.modal{
+z-index: -5;
+}
 
 .contenedor6{
     padding: 20px;
@@ -131,6 +134,7 @@ body{
     z-index: 999998;
     top: 7vw;
     margin: 10px;
+    z-index: 2;
   }
   
   .inlineMedia {

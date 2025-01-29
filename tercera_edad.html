@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fundacion Sanax</title>
-    <!-- <link rel="shortcut icon" href="imagenes/Group-251.png"> -->
+    <link rel="shortcut icon" href="imagenes/logoFundaciónPNG.ico">
     <!-- <link rel="stylesheet" href="styles.css" type="text/css"> -->
     <link rel="stylesheet" href="stylesOtros.css" type="text/css">
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -14,11 +14,76 @@
 </head>
 <body>
 
+    <!-- Modal Donar -->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <div class="container">
+                      <div class="item">
+                          <i class="fa-solid fa-hand-holding-heart" style="color:#4b0c0c;font-size: 20px;"></i>
+                      </div>
+                      <div class="item">
+                          <h2 class="fs-5">Dona Ahora</h2>
+                      </div>
+                  </div>                    
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body" >
+                  <br>
+                  <h6 class="d-flex justify-content-center">“AYUDA SIN ESPERAR NADA Y TU CORAZÓN ENCONTRARÁ PAZ”</h6>
+                  <br>
+                  <p class="fs-5 parraf" style="color:#4b0c0c;">COOPERATIVA DE AHORROS Y CRÉDITOS JARDÍN AZUAYO</p>
+                  <p class="fs-5 parraf" style="color:#4b0c0c;">CUENTA DE AHORROS: <span style="color:black;" >2518405</span></p>
+                  <p class="fs-5 parraf" style="color:#4b0c0c;">CEDULA IDENTIDAD: <span style="color:black;">0913778205</span> </p>
+                  <p class="fs-5 parraf" style="color:#4b0c0c;">CORREO: <span style="color:black;">fundacionsanax2021@gmail.com</span> </p>
+                  <p class="fs-5 parraf" style="color:#4b0c0c;">TELEFONO: <span style="color:black;">0993130728</span> </p>
+                  <br>
+              </div>
+              <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+          </div>
+      </div>
+  </div>
+
+      <!-- Hazte Socio -->
+      <div class="modal fade  position-fixed" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <div class="container">
+                          <div class="item">
+                              <i class="fa-solid fa-handshake"  style="color:#4b0c0c;font-size: 20px;"></i>
+                          </div>
+                          <div class="item">
+                              <h2 class="fs-5">Hazte Socio</h2>
+                          </div>
+                      </div>                    
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body" >
+                      <br>
+                      <h5 class="d-flex justify-content-center">“HAZTE SOCIO Y SÉ PARTE DE NOSOTROS.”</h5>
+                      <br>
+                      <p class="fs-5 parraf" style="color:#4b0c0c;">Escribenos o llamanos e inmediatamente nos contactaremos contigo</p>
+                      <p class="fs-5 parraf" style="color:#4b0c0c;">Correo: <span style="color:black;">fundacionsanax2021@gmail.com</span></p>
+                      <p class="fs-5 parraf" style="color:#4b0c0c;">Teléfono: <span style="color:black;">0993130728</span> </p>
+                      <br>
+                      <button type="button" onclick="SocioCerrar()" id="modalSocio" style="margin-left: 20px;" class="btn btn-outline-danger animate__animated animate__heartBeat animate__infinite">Hazte Socio Ahora</button>
+
+                  </div>
+                  <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  
     <header id="inicio">
         <div id="contenedor">
             <div id="izquierda">
-                <!--   <img  class="imglogo"   src="imagenes/logofund.png"> -->
-                <h1>Fundación Sanax</h1>
+              <img  class="imglogo"   src="imagenes/logoFundaciónPNG.png" width="65">
             </div>
             <div id="derecha">
                 
@@ -63,44 +128,56 @@
     </div>
 
     <div class="lateral-scroll-media">
-        <div class="inlineMedia">
-          <ul class="menu-list arrow-media">
-            <li class="menu-item">
-              <div class="circlescroll animate__animated animate__heartBeat animate__infinite">
-                <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal2"><i class="fa-solid fa-hand-holding-heart"></i></a>
-                <span class="datascroll2">Donar Ahora</span>
-              </div>
-            </li>
-            <li class="menu-item">
+      <div class="inlineMedia">
+        <ul class="menu-list arrow-media">
+          <li class="menu-item">
+            <div class="circlescroll animate__animated animate__heartBeat animate__infinite">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal2"><i class="fa-solid fa-hand-holding-heart iconData"></i></a>
+              <span class="datascroll2">Donar Ahora</span>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="circlescroll">
+              <a href="#"><i class="fa-solid fa-cubes-stacked iconData"></i></a>
+              <span class="datascroll">Proyectos Realizados</span>
+              <ul class="submenu">
+                <li><a href="capacitacion.html"><i class="fa-solid fa-book-open-reader"></i>&nbsp;&nbsp;Capacitaciones</a></li>
+                <li><a href="pequeno_negocios.html"><i class="fa-solid fa-building-user"></i>&nbsp;&nbsp;Ayuda a Pequeños Negocios</a></li>
+                <li><a href="estudiantes_univer.html"><i class="fa-solid fa-school"></i>&nbsp;&nbsp;Ayuda a Estudiantes Universitarios</a></li>
+                <li><a href="mujeres.html"><i class="fa-solid fa-person-dress"></i>&nbsp;&nbsp;Ayuda a Mujeres</a></li>
+                <li><a href="tercera_edad.html"><i class="fa-solid fa-person-cane"></i>&nbsp;&nbsp;Ayuda a Personas Tercera Edad</a></li>
+                <li><a href="sacerdotes.html"><i class="fa-solid fa-church"></i>&nbsp;&nbsp;Ayuda a Sacerdotes</a></li>
+                <li><a href="salud_comunitaria.html"><i class="fa-solid fa-hand-holding-medical"></i>&nbsp;&nbsp;Ayuda a Salud Comunitaria</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="menu-item">
+            <div class="circlescroll">
+              <a href="#"><i class="fa-solid fa-hands-holding-child iconData"></i></a>
+              <span class="datascroll">Proyectos Vigentes</span>
+              <ul class="submenu">
+                  <li><a href="#"><i class="fa-solid fa-house"></i>&nbsp;&nbsp;Consejería para niñas de casa hogar</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="menu-item">
               <div class="circlescroll">
-                <a href="#"><i class="fa-solid fa-cubes-stacked"></i></a>
-                <span class="datascroll">Proyectos</span>
+                <a href="#"><i class="fa-solid fa-house-user iconData"></i></a>
+                <span class="datascroll">Proyectos Futuro</span>
                 <ul class="submenu">
-                  <li><a href="capacitacion.html"><i class="fa-solid fa-book-open-reader"></i>&nbsp;&nbsp;Capacitaciones</a></li>
-                  <li><a href="pequeno_negocios.html"><i class="fa-solid fa-building-user"></i>&nbsp;&nbsp;Ayuda a Pequeños Negocios</a></li>
-                  <li><a href="estudiantes_univer.html"><i class="fa-solid fa-school"></i>&nbsp;&nbsp;Ayuda a Estudiantes Universitarios</a></li>
-                  <li><a href="mujeres.html"><i class="fa-solid fa-person-dress"></i>&nbsp;&nbsp;Ayuda a Mujeres</a></li>
-                  <li><a href="tercera_edad.html"><i class="fa-solid fa-person-cane"></i>&nbsp;&nbsp;Ayuda a Personas Tercera Edad</a></li>
-                  <li><a href="sacerdotes.html"><i class="fa-solid fa-church"></i>&nbsp;&nbsp;Ayuda a Sacerdotes</a></li>
-                  <li><a href="salud_comunitaria.html"><i class="fa-solid fa-hand-holding-medical"></i>&nbsp;&nbsp;Ayuda a Salud Comunitaria</a></li>
+                    <li></li>
                 </ul>
               </div>
             </li>
-            <li class="menu-item">
-              <div class="circlescroll">
-                <a href="#"><i class="fa-solid fa-hands-holding-child"></i></a>
-                <span class="datascroll2">Proyectos Vigentes</span>
-              </div>
-            </li>
-            <li class="menu-item">
-              <div class="circlescroll">
-                <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal3"><i class="fa-solid fa-handshake"></i></a>
-                <span class="datascroll2">Hazte Socio</span>
-              </div>
-            </li>
-          </ul>
-        </div>
+          <li class="menu-item">
+            <div class="circlescroll">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal3"><i class="fa-solid fa-handshake iconData"></i></a>
+              <span class="datascroll2">Hazte Socio</span>
+            </div>
+          </li>
+        </ul>
       </div>
+    </div>
       
     <footer id="idFooter">
         <div id="contenedor8" >
@@ -113,8 +190,8 @@
                     </div>
                     <div class="two8">
                         <h3>INFORMES:</h3>
-                        <p class="footerparref" ><i class="fa-solid fa-thumbtack"></i> OFICINA , PARROQUIA FEBRES CORDERO<br>GÓMEZ RENDÓN 5025 ENTRE LA 28 Y 29 Guayaquil</p>
-                        <p class="footerparref"><i class="fa-solid fa-phone"></i>  0993130728 - 0993684922</p>
+                        <p class="footerparref" ><i class="fa-solid fa-thumbtack"></i> OFICINA, PARROQUIA FEBRES CORDERO<br>GÓMEZ RENDÓN 5025 ENTRE LA 28 Y 29 Guayaquil</p>
+                        <p class="footerparref"><i class="fa-solid fa-phone"></i>  0993130728</p>
                         <p class="footerparref"><i class="fa-solid fa-envelope"></i> fundacionsanax2021@gmail.com</p>
                     </div>
                 </div>
@@ -133,6 +210,13 @@
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-    
+    <script>
+      function SocioCerrar(){
+         $('#exampleModal3').modal('hide');
+         setTimeout(function() {
+          window.location.href = "index.html#contacto";
+         }, 100);
+      }
+     </script>
 </body>    
 </html>

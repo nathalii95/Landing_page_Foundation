@@ -12,6 +12,7 @@ body{
   font-family: 'Roboto', sans-serif;
 }
 
+
 .sectionbackindex{
 
   background-image:url(imagenes/final.png);
@@ -641,10 +642,12 @@ z-index: 1000;
   column-gap:10px;
 }
 
-#izquierda7 img{
+#izquierda7 img {
   display: grid;
-  height: 100%;
+  height: 18rem;
   width: auto;
+  margin-top: 15px;
+ margin-left: 30px;
 }
 
 #derecha7{
