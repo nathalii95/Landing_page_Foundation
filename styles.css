@@ -73,7 +73,7 @@ body{
     padding: 0;
     display: grid;
     grid-template-columns: 1fr;
-    z-index: 9999;
+    z-index: 2;
     top: 7vw;
     margin: 10px;
   }
@@ -141,7 +141,7 @@ body{
     padding: 5px;
     border-radius: 5px;
     white-space: nowrap;
-    z-index: 10000; 
+    z-index: 500; 
   }
   
   .datascroll {
@@ -609,7 +609,7 @@ z-index: 1000;
       background-size: cover;
       background-repeat: no-repeat;
       width: 100%;
-      /* height: 40vh; */
+      height: 40vh;
       align-items: center;
       justify-items: center;
       place-items: center;
@@ -870,22 +870,9 @@ height: 20px;
 
 }
 
-#contpri3 h2 {
-    font-size: 2.2rem;
-  }
-
-.lista3 {
-    justify-content: center;
-  }
-
 #contpri3  .contprimero {
   font-size: 2rem !important;
 }
-
-.inputcontc {
-    width: 95%;
-    margin-left: 0;
-  }
 
 #contUl3 h2, .divgallery h2, #contenedor4 h2, #contUl6 h2 , #derecha7 h2 {
   font-size: 2rem !important;
@@ -893,7 +880,7 @@ height: 20px;
 }
 
 .divgallery h6 , #derecha7 h6{
-  font-size: 1.5rem !important;
+  font-size: 1.2rem !important;
 }
 
 .contimg5 li{
@@ -908,12 +895,8 @@ height: 20px;
 
 
 .lateral-scroll-media{
-/*   margin-top: 140px;
-  z-index: 2; */
-    top: auto;
-    bottom: 5px; /* Lo bajamos */
-    left: 5px;
-    transform: scale(0.8); /* Lo hacemos un poco más pequeño */
+  margin-top: 140px;
+  z-index: 2;
 }
 
 .imgdiv5{
@@ -929,8 +912,7 @@ height: 20px;
 }
 
  #contenedor9{
-  height: 60vh;
-
+  height: 40vh;
 }
 
 .txet-mision{
@@ -942,18 +924,11 @@ height: 20px;
 
 @media (max-width: 800px) {
 
+ 
+  
 .lateral-scroll-media{
-  margin-top: 10px !important;
+  margin-top: 140px;
 }
-
-/* Misión y Visión ahora uno debajo del otro */
-  #contenedor5 {
-    grid-template-columns: 1fr;
-  }
-
-  .top-salt {
-    margin: 20px !important; /* Reducimos el margen que tenías de 100px */
-  }
 
   .sectionbackindex   {
     height: 16vh;
@@ -987,20 +962,14 @@ height: 20px;
   }
   /* Encabezado */
   #contenedor {
- /*    display: grid;
+    display: grid;
     grid-template-columns: 1fr;
-    top:0; */
-    grid-template-columns: 1fr;
-    height: auto;
-    padding: 10px;
+    top:0;
   }
  
    #izquierda, #derecha, #final{
-/*     display: grid;
-    justify-self: center; */
-
+    display: grid;
     justify-self: center;
-    margin: 5px 0;
   }
   #izquierda{
  
@@ -1068,7 +1037,7 @@ height: 20px;
   }
 
   #izquierda7 img {
-      width: 80%;
+      width: 100%;
       height: auto;
   }
 
